@@ -115,7 +115,7 @@ border-radius: 5px;
 .glmentext b:hover {text-shadow: 3px 3px 3px blue;}
 .glmentext{  /*Т Е К С Т НА Г Л А В Н О Й*/
     opacity: 0.8;
-background: url("i/bumagafon.png");  background-size: 200%; /* background: url("i/Help.svg");    background-size: auto; background: #f0fcfc; */
+background: #cbf2ec;  background-size: 200%; /* background: url("i/Help.svg");    background-size: auto; background: #f0fcfc; */
 
 color:none;
 border-radius: 10px;    /*    скругление              */
