@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--	<script src="js/modernizr.js"></script> -->	
+
+	<title>HTML основа</title>
+  <script src="menu.js"></script>
+
+
+<link rel="icon" type="image/vhd.microsoft.icon" href="i/Info.ico">
+
+<link rel="stylesheet" type="text/css" href="menug.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link rel="stylesheet" type="text/css" href="st.css">		
+
+<link rel="stylesheet" type="text/css" href="blove.css"> 
+</head>
+<body>
+
+
+
+</br></br>
+
+
+<header align="center">
+<ul class="menu cf">
+  <li><a href="index.htm#gg">на главную</a></li>
+
+  <li>
+    <a href="#">HTML</a>
+      <ul class="submenu">
+        <li><a href="htmlcreate.htm">Создание сайта</a></li>
+        <li><a href="htmlosnova.htm">Основное</a></li>
+        <li><a href="htmltable.htm">Таблицы</a></li>
+        <li><a href="htmlimg.htm">Изображения</a></li>
+        <li><a href="htmlaudio.htm">Аудио</a></li>
+      </ul>
+  </li>
+
+    <li>
+    <a href="#">CSS</a>
+      <ul class="submenu">
+        <li><a href="#">Создание стиля сайта и его привязка</a></li>
+        <li><a href="#">Фоны</a></li>
+        <li><a href="#">Разное</a></li>
+        
+      </ul>
+  </li>
+      <li><a href="#">О Сайте</a><ul class="submenu">
+  <li><a href="index.htm#gg">кратко о Сайте</a></li>
+</li>
+      </ul>
+  </li>
+</ul>           
+</header>
+ </br></br>
+
+<div class="ttxt">
+<!-- <img src="i/spii.jpg"  height="auto" width="100%"> --> 
+</div>
+</br>
+
+
+
+
+
+
+
+<div class="rmen1">
+
+
+                    <h1 align="center"> HTML</h1>
+<a class="myButton" href="htmlcreate.htm">Создание сайта</a><a class="myButton" href="htmlosnova.htm">Основное</a><a class="myButton" href="htmltable.htm">Таблицы</a> </br>
+<a class="myButton" href="htmlimg.htm">Изображения</a><a class="myButton" href="htmlaudio.htm">Аудиоплеер</a>
+</br>
+
+                    <h1 align="center"> CSS</h1>
+<a class="myButton" href="#">qwerty1</a><a class="myButton" href="#">qwerty2</a><a class="myButton" href="#">qwerty3</a> </br>
+<a class="myButton" href="#">qwerty1</a><a class="myButton" href="#">qwerty2</a><a class="myButton" href="#">qwerty3</a> </br>
+</br>
+
+</div>
+
+<div class="bbpt">
+     <ul id="breadcrumb"> 
+        <li><a href="#">Создание сайтов</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="htmltable.htm">Таблицы</a></li>
+        <li><a href="testtable.htm">Тест</a></li>
+    </ul> 
+
+
+<xmp></xmp>
+
+
+
+<style type="text/css"> /*      Сокрытие кнопок выбора    */
+
+  .wrapper{
+    width: 600px;
+    height: 130px;
+    margin: 0 auto;
+    display: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+  }
+
+</style>
+
+
+
+
+<script type="text/javascript">
+
+  var countQuest = 0;
+  var plus = 0;
+  var test_start = 0;
+  
+  function check(num){
+  
+    if(num == 4){ 
+      
+      document.getElementById('area').style.display='block'; //
+      document.getElementById('start').style.display='none';
+      document.getElementById('end').style.display='inline';
+
+      if(test_start == 0){
+      
+          //Массив вопросов
+        var questions = ["Тэг строки таблицы","Тэг ячейки таблицы","Что делает параметр colspan '3'"];
+
+          //Массивы вариантов ответов \/
+        var number1 = ["br","th","Расширяет ячейку вниз на 2"]; 
+        var number2 = ["tr","br","Расширяет ячейку вверх на 2"];  
+        var number3 = ["table","b","Расширяет ячейку вверх на 3"];  
+        var number4 = ["h1","table","Расширяет ячейку вниз на 3"];
+
+        document.getElementById('question').innerHTML=questions[countQuest];
+        
+        document.getElementById('option1').innerHTML=number1[countQuest];
+        document.getElementById('option2').innerHTML=number2[countQuest];
+        document.getElementById('option3').innerHTML=number3[countQuest];
+        document.getElementById('option4').innerHTML=number4[countQuest];
+        
+          //Массив правильных ответов
+        var answer = [1,0,3,1];
+        
+        test_start = 1; 
+      }
+    }
+    else{
+          //Массив вопросов
+      var questions = ["Тэг строки таблицы","Тэг ячейки таблицы","Что делает параметр colspan '3'", "Параметр тэга ячейки, расширяющий ячейку таблицы вниз"];
+      
+        //Массивы вариантов ответов
+
+        var number1 = ["br","th","Расширяет ячейку вниз на 2","rowspan"]; 
+        var number2 = ["tr","br","Расширяет ячейку вверх на 2","colspan"];  
+        var number3 = ["table","b","Расширяет ячейку вверх на 3","border"];  
+        var number4 = ["h1","table","Расширяет ячейку вниз на 3","tr"];
+
+
+      
+        //Массив правильных ответов
+      var answer = [1,0,3,1];
+      
+      if(num == answer[countQuest]) plus++;
+      
+      if(questions.length - 1> countQuest){
+
+        countQuest++;
+        
+        document.getElementById('question').innerHTML=questions[countQuest];
+      
+        document.getElementById('option1').innerHTML=number1[countQuest];
+        document.getElementById('option2').innerHTML=number2[countQuest];
+        document.getElementById('option3').innerHTML=number3[countQuest];
+        document.getElementById('option4').innerHTML=number4[countQuest];
+      }
+
+    
+else if(plus==0){document.getElementById('area').style.display='none';alert('У Вас '+' нет правильных ответов!');}
+    else if(plus==1){document.getElementById('area').style.display='none';alert('Ваша оценка '+'3+'+' балла из 5');}
+    else if(plus==2){document.getElementById('area').style.display='none';document.getElementById('area').style.display='none';alert('Ваша оценка '+'4'+' балла из 5');}
+    else if(plus==3){document.getElementById('area').style.display='none';alert('Ваша оценка '+'4+'+' балла из 5');}
+    else if(plus==4){document.getElementById('area').style.display='none';alert('Ваша оценка '+'5'+' балла из 5');}
+
+    else{ 
+        document.getElementById('area').style.display='none';
+        alert('У Вас ' + plus + ' правильных ответа!');}
+
+/*
+
+
+  //Массив вопросов
+        var questions = ["Расширение файла страницы сайта","Основной тэг для сайта","Тэг, в котором храниться тэг title"];
+
+          //Массивы вариантов ответов \/
+        var number1 = [".css","head","body"]; 
+        var number2 = [".html и .htm","html","между head и body"];  
+        var number3 = [".js и .htm","между head и body","за тэгом html"];  
+        var number4 = [".svg","в любом месте","head"];
+
+        document.getElementById('question').innerHTML=questions[countQuest];
+        
+        document.getElementById('option1').innerHTML=number1[countQuest];
+        document.getElementById('option2').innerHTML=number2[countQuest];
+        document.getElementById('option3').innerHTML=number3[countQuest];
+        document.getElementById('option4').innerHTML=number4[countQuest];
+        
+          //Массив правильных ответов
+        var answer = [1,0,3,1];
+        
+        test_start = 1; 
+      }
+    }
+    else{
+          //Массив вопросов
+      var questions = ["Расширение файла страницы сайта","Основной тэг для сайта","Тэг, в котором храниться тэг title","тэг, внутри которого находится основная видимая часть сайта"];
+      
+        //Массивы вариантов ответов
+
+        var number1 = [".css","html","body","head"]; 
+        var number2 = [".html и .htm","head","между head и body","body"];  
+        var number3 = [".js и .htm","title","за тэгом html","между тэгами head и body"];  
+        var number4 = [".svg","body","head","title"];
+
+
+
+        _______________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+else if(plus==0){alert('У Вас '+' нет правильных ответов!');}
+
+      else{ 
+        document.getElementById('area').style.display='none';
+        alert('У Вас ' + plus + ' правильных ответа!');}
+
+
+
+else if(plus==0){alert('У Вас '+' нет правильных ответов!');}
+    else if(plus==1){alert('Ваша оценка '+'3'+' балла из 5');}
+    else if(plus==2){alert('Ваша оценка '+'3+'+' балла из 5');}
+    else if(plus==3){alert('Ваша оценка '+'4'+' балла из 5');}
+    else if(plus==4){alert('Ваша оценка '+'4+'+' балла из 5');}
+    else if(plus==5){alert('Ваша оценка '+'5'+' балла из 5');}
+
+
+
+else{ 
+        document.getElementById('area').style.display='none';
+        alert('У Вас ' + plus + ' правильных ответа!');}
+
+*/
+
+
+    }
+  }
+  
+</script>
+
+
+
+
+
+
+  <div style="margin-top: 200px;">
+
+    <div id="area" class="wrapper">
+
+      <center>      
+      
+        <p style="font-size: 38px;font-weight: bold;padding-top: 2px;color: #fff;" id="question"></p>
+        
+        <button onclick="check(0)" class="myButton" id="option1"></button>
+        
+        <button onclick="check(1)" class="myButton" id="option2"></button>
+        
+        <button onclick="check(2)" class="myButton" id="option3"></button>
+        
+        <button onclick="check(3)" class="myButton" id="option4"></button>
+      
+      </center>
+
+    </div>
+  
+  </div>  
+          </br></br>
+  <br><center>
+    <button id="start" class="myButton" onclick="check(4)">Приступить к тесту</button>
+    <script type="text/javascript"> var curent_url = document.URL; document.write("<a id='end' style='display: none;' class='myButton' href='" + curent_url + "'>Начать сначала</a>"); </script>  
+  </center>
+
+
+
+
+</div>
+	
+
+</body>
+</html>

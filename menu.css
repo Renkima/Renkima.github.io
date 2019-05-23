@@ -7,10 +7,9 @@ list-style: none; /*убираем маркеры списка*/
   margin: 0; /*убираем отступы*/
   padding-left: 0; /*убираем отступы*/
 margin-top: 1%; /*делаем отступ сверху*/
-  height: 100px; /*задаем высоту*/
+  height: 50px; /*задаем высоту*/
 
-border-radius: 40px;
-
+border-radius: 30px;
 }
 
 .na2 a {
@@ -39,19 +38,21 @@ background: black;
 }
 
 .na2 li {
-  float: left; /*Размещаем список горизонтально для реализации меню*/
+  float: right; /*Размещаем список горизонтально для реализации меню*/
   margin: 1%; /*       отступ между пунктами           */
        list-style: none;    /* убирает маркеры элементов списка   */
+
+       position: relative;
+
 }
 
 .na2 li:hover
 {
-  font-size: 110%; 
+  font-size: 111%; 
 }
 
 
-.na2  li:hover ~ li {opacity: 0.9;}
-
+    /*  .na2  li:hover ~ li {opacity: 0.1;}   */
 
 /*__________________________________________________________________________________________*/
 

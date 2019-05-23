@@ -14,27 +14,212 @@ border: 2%;
 
 
 
-/* ___________________________txt нечто_)_____________________________________ */
+/* ___________________________txt )_____________________________________ */
 .bbpt{  /* *TXT* о с н о в а */
+ float: left;
 
-opacity: 0.7;
+opacity: 0.8;
   font-size: 16px;
 background: black; 
 color: #66e0d6;  
     border-size: 1%;
 border-radius: 10px;    /*    скругление              */
 
-   margin: 1%;
-    margin-top: 11%;       /*   отступ для границ              */
-  padding: 3%;      /*    отступ для объектов внутри     */
+    margin-top: 15%;        /*   отступ для границ              */
+    margin-left:  2%;     
+    margin-right: 30%;     
+
+  padding: 1%;      /*    отступ для объектов внутри     */
 text-decoration: none;
 }
 
 .bbpt:hover{  /* *TXT* о с н о в а */
-opacity: 0.8; background: black; color: #66e0d6;}
+opacity: 0.9; background: black; color: #66e0d6; 
 
-.bbpt:hover{  /* *TXT* о с н о в а */
-opacity: 0.8; background: black; color: #66e0d6;}
+}
+
+
+/*_____________________________________________________________________*/
+
+.bbpt img{
+
+}
+
+
+
+
+/* ___________________________mennnn )_____________________________________ */
+.rmen1{  /* *TXT* о с н о в а */
+ float: right;
+position: absolute;
+opacity: 0.8;
+  font-size: 16px;
+background: black; 
+color: #66e0d6;  
+    border-size: 1%;
+border-radius: 10px;    /*    скругление              */
+
+    margin-top: 15%;        /*   отступ для границ              */
+    margin-left:  71%;     
+    margin-right: 1%;     
+
+  padding: 1%;      /*    отступ для объектов внутри     */
+text-decoration: none;
+}
+
+.rmen1:hover{  /* *TXT* о с н о в а */
+opacity: 0.9; background: black; color: #66e0d6; 
+
+}
+
+
+
+.na3 ul {
+list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+
+  height: 50px; /*задаем высоту*/
+
+border-radius: 30px;
+
+}
+
+.na3 a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+
+  color: white; 
+     padding:0px 50px; 
+
+  line-height: 50px; 
+  display: block; 
+      -moz-transition: all 0.3s 0.05s ease; /*плавный переход*/
+      -o-transition: all 0.5s 0.01s ease;
+      -webkit-transition: all 0.3s 0.01s ease;
+
+border-radius: 50px;
+border: 3px solid white;
+background: black;
+}
+
+.na3 a:hover {
+  background: none;
+  color: white;
+       border: 1px solid red;   
+       border-radius: 15px;
+  padding: 5px 55px; /*отступ 0px это вертикально и после 55 - горизонтально*/    
+}
+
+.na3 li {
+   /*   float: right; Размещаем список горизонтально для реализации меню*/
+  margin: 2%; /*       отступ между пунктами           */
+       list-style: none;    /* убирает маркеры элементов списка   */
+       position: relative;
+
+}
+
+
+
+/*_____________________________________________________________________*/
+
+
+.ccd{       /*    типо код    */
+    background: silver;  
+    color: black; 
+    border-size: 1%;
+      border-radius: 15px;
+  margin: 1%;      /*    отступ внешняя     */
+  padding: 1%;      /*    отступ внутренняя  */
+
+
+      -moz-transition: all 0.5s 0.05s ease; /*плавный переход*/
+      -o-transition: all 0.5s 0.05s ease;
+      -webkit-transition: all 0.5s 0.05s ease;
+
+
+}
+
+
+/*_____________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+/*_____________________________ Кнопка синяя ________________________________________*/
+
+
+.myButton {
+  -moz-box-shadow:inset 0 1px 0 0 #54a3f7;
+  -webkit-box-shadow:inset 0 1px 0 0 #54a3f7;
+  box-shadow:inset 0 1px 0 0 #54a3f7;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+  background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+  background-color:#007dc1;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  border:1px solid #124d77;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Georgia;
+  font-size:13px;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0 1px 0 #154682;
+
+  }
+  .myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+    background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+    background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+    background-color:#0061a7;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+
+.myButton i{
+ color: silver;
+}
+
+/*_____________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*_____________________________________________________________________*/
+/*_____________________________________________________________________*/
+/*_____________________________________________________________________*/
 
 
 .sk a{
@@ -46,7 +231,7 @@ opacity: 0.8; background: black; color: #66e0d6;}
    border-radius: 12px;
       border: 2px solid maroon; 
 }
-
+/*_____________________________________________________________________*/
 .warning big{color:red;
  margin: 1px;
    border-radius: 1px;
@@ -91,19 +276,21 @@ border-radius: 5px;
 
 
 /*_____________________________________________________________________*/
-.b2i{
+.b2i{       /*    типо код    */
     background: silver;  
     color: black; 
     border-size: 1%;
 border-radius: 15px;
 
-   margin: 1%;
-  padding: 1%;      /*    отступ для объектов внутри     */
+   margin: 1%;      /*    отступ внешняя     */
+  padding: 1%;      /*    отступ внутренняя  */
 
 
       -moz-transition: all 0.5s 0.05s ease; /*плавный переход*/
       -o-transition: all 0.5s 0.05s ease;
       -webkit-transition: all 0.5s 0.05s ease;
+
+
 }
 
 .b2i:hover{
@@ -113,18 +300,22 @@ border-radius: 15px;
 border-radius: 5px;
 }
 /*_____________________________________________________________________*/
+/*_____________________________________________________________________*/
+/*_____________________________________________________________________*/
+/*_____________________________________________________________________*/
+/*_____________________________________________________________________*/
 
 
-.namees{font-size: 500%; text-shadow: 1px 1px 1px  #30d5c8;}
+.namees{font-size: 500%; text-shadow: 1px 1px 1px  #30d5c8; }
   .namees b:hover {text-shadow: 5px 5px 3px  #30d5c8;}
 .namees i {font-size: 150%; text-shadow: 1px 5px 1px  #30d5c8;}
 
-
+/*_____________________________________________________________________*/
 
 .glmentext b {text-shadow: 2px 2px 2px  blue;}
 .glmentext b:hover {text-shadow: 3px 3px 3px blue;}
 
-.glmentext{  /*Т Е К С Т НА Г Л А В Н О Й*/
+.glmentext{  /*Т Е К С Т НА Г Л А В Н О Й*/ 
     opacity: 0.8;
 background: url("i/bg2.png"); background-size: 200%; /* background: url("i/bg2.png");    background-size: auto; background: #f0fcfc; */
 
@@ -135,10 +326,18 @@ color:white;
     border-radius: 10px;    /*    скругление              */
 
       margin: 1%;
-      margin-top: 50%;       /*   отступ для границ              */
+      margin-top: 20%;       /*   отступ для границ              */
     padding: 3%;      /*    отступ для объектов внутри     */
 font-size: 300%;
 }
+
+
+/*_____________________________________________________________________*/
+/*_____________________________________________________________________*/
+/*_____________________________________________________________________*/
+/*_____________________________________________________________________*/
+/*_____________________________________________________________________*/
+
 
  
 

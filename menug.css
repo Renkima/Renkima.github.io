@@ -1,5 +1,5 @@
-/* __________________________M-E-N-U__________________________ */
-#breadcrumb {margin: 0; padding: 0;} 
+/* __________________________POD--M-E-N-U__________________________ */
+#breadcrumb {margin: 0; padding: 0; } 
 #breadcrumb li { 
         display: inline-block; /* affichage horizontal */ 
         position: relative;
@@ -22,9 +22,12 @@
         border-radius: 0 17px 17px 0 / 0 35px 35px 0;    
         background: #ccc;        
       } 
-#breadcrumb li:hover ~ li  {opacity: 0.5;}
+#breadcrumb li:hover ~ li  {opacity: 0.6;}
+#breadcrumb li:hover ~ li + li  {opacity: 0.4;}
+#breadcrumb li:hover ~ li + li + li  {opacity: 0.2;}
+#breadcrumb li:hover ~ li + li + li + li  {opacity: 0.1;}
+#breadcrumb li:hover ~ li + li + li + li + li  {opacity: 0;}
 
-#breadcrumb li:hover ~ li + li  {opacity: 0.2;}
 #breadcrumb a {
     background: -webkit-radial-gradient(-24px center, circle , transparent 30px, #ccc 32px);
     background: -moz-radial-gradient(-24px center, circle , transparent 30px, #ccc 32px);
