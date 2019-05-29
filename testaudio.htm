@@ -24,6 +24,7 @@
 
 </br></br>
 
+
 <header align="center">
 <ul class="menu cf">
   <li><a href="index.htm">на главную</a></li>
@@ -80,71 +81,53 @@
 <div class="bbpt">
      <ul id="breadcrumb"> 
         <li><a href="html.htm">HTML</a></li>
-        <li><a href="htmltable.htm">Таблицы</a></li>
-        <li><a href="testtable.htm">Тест</a></li>
+        <li><a href="htmlaudio.htm">Аудио</a></li>
+        <li><a href="testaudio.htm">Тест</a></li>
     </ul> 
 
 
 <xmp></xmp>
 
 
+
 <script type="text/javascript">
 // Заголовок страницы (h1)
-var title = 'Тестирование на наличие необходимых знаний для работы с таблицами на HTML';
+var title = 'Тестирование на наличие необходимых знаний для работы с музыкой на HTML';
 // Подзаголовок (h2)
 var subtitle = "Этот тест позволяет оценить Ваши знания";
 // Это ваши вопросы
 var questions=[
 
 {
-  text: "Тэг таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
+  text: "Тэг для добавления аудиоплеера:",
+  answers: ["img",
+      "embed",
+      "music",
+      "video"],
   correctAnswer: 1 // нумерация ответов с нуля!
 },
 
 
-
-
 {
-  text: "Тэг строки таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
-  correctAnswer: 2
+  text: "Параметр для отключения автовоспроизведения:",
+  answers: ["loop",
+      "autostop",
+      "autoplay",
+      "autostart"],
+  correctAnswer: 3 // нумерация ответов с нуля!
 },
 
 
 {
-  text: "Тэг ячейки таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
-  correctAnswer: 0 
-},
-
-
-
-
-{
-  text: "Параметр расширения ячейки таблицы по вертикали (объединения с соседними):",
-  answers: ["rowspan",
-      "colspan",
-      "width",
-      "height"],
-  correctAnswer: 1
-},
-
-
-{
-  text: "Параметр расширения ячейки таблицы по вертикали (объединения с соседними):",
-  answers: ["height",
-      "colspan",
-      "width",
-      "rowspan"],
-  correctAnswer: 3
+  text: "Параметр для отключения интерфеса аудиоплеера:",
+  answers: ["start",
+      "loop",
+      "autoplay",
+      "autostart"],
+  correctAnswer: 1 // нумерация ответов с нуля!
 }
+
+
 
 
 ];
@@ -208,8 +191,6 @@ for(var q=0; q<questions.length; ++q) {
 </script>
 </ol>
 <input type="button" onClick="Score()" value="Проверить результаты" />
-
-</form>
 
 
 

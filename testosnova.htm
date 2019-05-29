@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
@@ -23,6 +23,7 @@
 
 
 </br></br>
+
 
 <header align="center">
 <ul class="menu cf">
@@ -80,72 +81,126 @@
 <div class="bbpt">
      <ul id="breadcrumb"> 
         <li><a href="html.htm">HTML</a></li>
-        <li><a href="htmltable.htm">Таблицы</a></li>
-        <li><a href="testtable.htm">Тест</a></li>
+        <li><a href="htmlosnova.htm">Основное</a></li>
+        <li><a href="testosnova.htm">Тест</a></li>
     </ul> 
 
 
 <xmp></xmp>
 
 
+
 <script type="text/javascript">
 // Заголовок страницы (h1)
-var title = 'Тестирование на наличие необходимых знаний для работы с таблицами на HTML';
+var title = 'Тестирование на наличие необходимых знаний для работы с основными тэгами на HTML';
 // Подзаголовок (h2)
 var subtitle = "Этот тест позволяет оценить Ваши знания";
 // Это ваши вопросы
 var questions=[
 
 {
-  text: "Тэг таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
-  correctAnswer: 1 // нумерация ответов с нуля!
-},
-
-
-
-
-{
-  text: "Тэг строки таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
-  correctAnswer: 2
+  text: "Тэг для уменьшения текста:",
+  answers: ["h1",
+      "br",
+      "b",
+      "small",
+      "hr",
+      "h1",
+      "big",
+      "i"],
+  correctAnswer: 3 // нумерация ответов с нуля!
 },
 
 
 {
-  text: "Тэг ячейки таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
-  correctAnswer: 0 
+  text: "Тэг для увеличения текста:",
+  answers: ["h1",
+      "br",
+      "b",
+      "small",
+      "hr",
+      "h1",
+      "big",
+      "i"],
+  correctAnswer: 6 
+},
+
+{
+  text: "Тэг для оглавления текста:",
+  answers: ["h1",
+      "br",
+      "b",
+      "small",
+      "hr",
+      "h1",
+      "big",
+      "i"],
+  correctAnswer: 5 
 },
 
 
-
-
 {
-  text: "Параметр расширения ячейки таблицы по вертикали (объединения с соседними):",
-  answers: ["rowspan",
-      "colspan",
-      "width",
-      "height"],
-  correctAnswer: 1
+  text: "Тэг для увеличения текста:",
+  answers: ["h1",
+      "br",
+      "b",
+      "small",
+      "hr",
+      "h1",
+      "big",
+      "i"],
+  correctAnswer: 6 
 },
 
+{
+  text: "Оглавление текста (минимальные и максимальное значение):",
+  answers: ["h1..h2",
+      "h1..h3",
+      "h1..h4",
+      "h1..h5",
+      "h1..h6",
+      "h1..h7"],
+  correctAnswer: 4 
+},
 
 {
-  text: "Параметр расширения ячейки таблицы по вертикали (объединения с соседними):",
-  answers: ["height",
-      "colspan",
-      "width",
-      "rowspan"],
-  correctAnswer: 3
+  text: "Тэг для курсивного текста:",
+  answers: ["h1",
+      "br",
+      "b",
+      "small",
+      "hr",
+      "h1",
+      "big",
+      "i"],
+  correctAnswer: 7 
+},
+
+{
+  text: "Тэг для жирного текста:",
+  answers: ["h1",
+      "br",
+      "b",
+      "small",
+      "hr",
+      "h1",
+      "big",
+      "i"],
+  correctAnswer: 2 
+},
+
+{
+  text: "Тэг для подчёркивания строки:",
+  answers: ["h1",
+      "br",
+      "b",
+      "small",
+      "hr",
+      "h1",
+      "big",
+      "i"],
+  correctAnswer: 4 
 }
-
 
 ];
 
@@ -208,8 +263,6 @@ for(var q=0; q<questions.length; ++q) {
 </script>
 </ol>
 <input type="button" onClick="Score()" value="Проверить результаты" />
-
-</form>
 
 
 

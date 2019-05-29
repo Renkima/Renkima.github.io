@@ -1,6 +1,6 @@
-body{font-family: "Georgia";}
+﻿body{font-family: "Georgia";}
 
-p{text-indent:2%;}
+p{text-indent:4%;}
 
 .ttxt       /* З А П А С К А */
 {
@@ -9,9 +9,127 @@ border: 2%;
 }
 
 
+/*____________________________________________________________________________________________________________
+
+.namees{font-size: 500%; text-shadow: 1px 1px 1px  #30d5c8; }
+  .namees b:hover {text-shadow: 5px 5px 3px  #30d5c8;}
+.namees i {font-size: 150%; text-shadow: 1px 5px 1px  #30d5c8;}
+
+.namees i:hover {text-shadow: 5px 10px 3px  #30d5c8;}
+______________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*_____________________________________________________________________*/
+
+
+.namees{font-size: 200%;  text-shadow: 3px 1px 2px  #30d5c8; }
+
+.namees i {font-size: 150%; text-shadow: 1px 5px 1px  #30d5c8;}
+
+.namees i:hover {text-shadow: 2px 1px 4px  #30d5c8; }
+/*_____________________________________________________________________*/
+
+
+
+
+
 /* ____________________________)_____________________________________ */
 
+.ggblock{  /* БЛОК Г Л А В Н Ы Й */
+          float: left;
+          position: relative;
+     display: inline-block;
 
+text-shadow: 1px 2px 4px  blue;
+
+
+box-shadow: 5px 5px 10px  #30d5c8;
+
+   width: 25%;
+                    height: auto; 
+/*        box-shadow: 2px 5px 3px  #30d5c8;
+  
+box-sizing: 50%;
+                    width: 25%;
+                    height: 25%; 
+
+
+
+
+*/
+
+
+
+
+opacity: 0.7;
+  font-size: 14px;
+
+
+background: black; 
+color: #66e0d6;  
+    border-size: 1%;
+border-radius: 10px;    /*    скругление              */
+
+    margin: 1%;        /*   отступ для границ      margin-top: 1%;         */
+    margin-bottom: 5%; 
+    margin-top: 3%; 
+
+  padding: 2%;      /*    отступ для объектов внутри     */
+text-decoration: none;
+}
+
+
+
+.ggblock:hover{
+
+opacity: 0.9;
+
+box-shadow: 2px 5px 3px  #30d5c8;
+
+text-shadow: 2px 1px 3px  blue;
+
+
+}
+
+
+
+.ggblock h1{
+
+box-shadow: 1px 6px 8px  green;
+
+text-shadow: 2px 5px 3px  green;
+
+font-family: "Segoe Script";
+}
+
+
+
+
+
+
+
+/* ___________________________________________________________________________________________________ */
+
+
+/* ___________________________________________________________________________________________________ */
+
+
+
+
+.bbpt:hover{  /* *TXT* о с н о в а */
+opacity: 0.9; background: black; color: #66e0d6; 
+
+}
 
 
 /* ___________________________txt )_____________________________________ */
@@ -26,8 +144,8 @@ color: #66e0d6;
 border-radius: 10px;    /*    скругление              */
 
     margin-top: 15%;        /*   отступ для границ              */
-    margin-left:  2%;     
-    margin-right: 30%;     
+    margin-left:  10%;     
+    margin-right: 10%;     
 
   padding: 1%;      /*    отступ для объектов внутри     */
 text-decoration: none;
@@ -303,14 +421,7 @@ border-radius: 5px;
 /*_____________________________________________________________________*/
 /*_____________________________________________________________________*/
 /*_____________________________________________________________________*/
-/*_____________________________________________________________________*/
 
-
-.namees{font-size: 500%; text-shadow: 1px 1px 1px  #30d5c8; }
-  .namees b:hover {text-shadow: 5px 5px 3px  #30d5c8;}
-.namees i {font-size: 150%; text-shadow: 1px 5px 1px  #30d5c8;}
-
-/*_____________________________________________________________________*/
 
 .glmentext b {text-shadow: 2px 2px 2px  blue;}
 .glmentext b:hover {text-shadow: 3px 3px 3px blue;}
