@@ -67,56 +67,76 @@
 
 
 
+
 <div class="bbpt">
      <ul id="breadcrumb"> 
         <li><a href="html.htm">HTML</a></li>
-        <li><a href="htmlcreate.htm">Создание сайта</a></li>
-        <li><a href="testhtmlcreate.htm">Тест</a></li>
+        <li><a href="htmlframe.htm">Фрэймы</a></li>
+        <li><a href="testframe.htm">Тест</a></li>
     </ul> 
 
 
 <xmp></xmp>
 
 
+
 <script type="text/javascript">
 // Заголовок страницы (h1)
-var title = 'Тестирование на наличие необходимых знаний длясоздания сайта на HTML';
+var title = 'Тестирование на наличие необходимых знаний для работы с фрэймами на HTML';
 // Подзаголовок (h2)
 var subtitle = "Этот тест позволяет оценить Ваши знания";
 // Это ваши вопросы
 var questions=[
 
-{
-  text: "Расширение файла веб-страницы:",
-  answers: ["css",
-      "htm и html",
-      "js"],
-  correctAnswer: 1 // нумерация ответов с нуля!
-},
+
+
 
 {
-  text: "Тэг, в котором храниться тэг title:",
-  answers: ["h1",
-      "body",
-      "head"],
-  correctAnswer: 2
+  text: "Параметр тэга iframe и frame для выбора имени фрейма:",
+  answers: ["cols",
+      "rows",
+      "frameborder",
+      "border",
+
+      "name",
+      "noresize",
+      "scrolling",
+      "marginheight",
+      "marginwidth",
+
+
+      "bordercolor"],
+  correctAnswer: 4 
 },
 
-{
-  text: "Тэг, в котором храниться отображаемые на сайте элементы:",
-  answers: ["body",
-      "title",
-      "head",
-      "между body и head"],
-  correctAnswer: 0
-},
+
 
 {
-  text: "Для чего нужен тэг title:",
-  answers: ["Позволяет отображать текст внутри веб-страницы",
-      "Позволяет использовать текст внутри тэга в качестве неотображаемого текста на веб-страницы",
-      "Позволяет использовать текст внутри тэга в качестве отображаемого наименования веб-страницы во вкладке"],
-  correctAnswer: 2
+  text: "Где находится тэг frameset:",
+  answers: ["Внутри body",
+      "Внутри head",
+      "Между body и head"],
+  correctAnswer: 2 
+},
+
+
+{
+  text: "Где находится тэг frame:",
+  answers: ["Внутри body",
+      "Внутри тэга frameset",
+      "Внутри head",
+      "Между body и head"],
+  correctAnswer: 1 
+},
+
+
+{
+  text: "Где находится тэг iframe:",
+  answers: ["Внутри body",
+      "Внутри тэга frameset",
+      "Внутри head",
+      "Между body и head"],
+  correctAnswer: 0 
 }
 ];
 
@@ -179,9 +199,6 @@ for(var q=0; q<questions.length; ++q) {
 </script>
 </ol>
 <input type="button" onClick="Score()" value="Проверить результаты" />
-
-</form>
-
 
 
 

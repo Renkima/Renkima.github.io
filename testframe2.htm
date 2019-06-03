@@ -67,57 +67,100 @@
 
 
 
+
 <div class="bbpt">
      <ul id="breadcrumb"> 
         <li><a href="html.htm">HTML</a></li>
-        <li><a href="htmlcreate.htm">Создание сайта</a></li>
-        <li><a href="testhtmlcreate.htm">Тест</a></li>
+        <li><a href="htmlframe.htm">Фрэймы</a></li>
+        <li><a href="testframe.htm">Тест</a></li>
     </ul> 
 
 
 <xmp></xmp>
 
 
+
 <script type="text/javascript">
 // Заголовок страницы (h1)
-var title = 'Тестирование на наличие необходимых знаний длясоздания сайта на HTML';
+var title = 'Тестирование на наличие необходимых знаний для работы с фрэймами на HTML';
 // Подзаголовок (h2)
 var subtitle = "Этот тест позволяет оценить Ваши знания";
 // Это ваши вопросы
 var questions=[
 
 {
-  text: "Расширение файла веб-страницы:",
-  answers: ["css",
-      "htm и html",
-      "js"],
-  correctAnswer: 1 // нумерация ответов с нуля!
+  text: "Параметр тэга iframe и frame для определения возможности изменения размера определённого фрейма:",
+  answers: ["cols",
+      "rows",
+      "frameborder",
+      "border",
+      "name",
+
+      "noresize",
+      "scrolling",
+      "marginheight",
+      "marginwidth",
+
+
+      "bordercolor"],
+  correctAnswer: 5 
 },
 
-{
-  text: "Тэг, в котором храниться тэг title:",
-  answers: ["h1",
-      "body",
-      "head"],
-  correctAnswer: 2
-},
 
 {
-  text: "Тэг, в котором храниться отображаемые на сайте элементы:",
-  answers: ["body",
-      "title",
-      "head",
-      "между body и head"],
-  correctAnswer: 0
+  text: "Параметр тэга iframe и frame для определения возможности скроллинга (прокрутки) определённого фрейма:",
+  answers: ["cols",
+      "rows",
+      "frameborder",
+      "border",
+      "name",
+      "noresize",
+
+      "scrolling",
+      "marginheight",
+      "marginwidth",
+
+
+      "bordercolor"],
+  correctAnswer: 6 
 },
 
+
 {
-  text: "Для чего нужен тэг title:",
-  answers: ["Позволяет отображать текст внутри веб-страницы",
-      "Позволяет использовать текст внутри тэга в качестве неотображаемого текста на веб-страницы",
-      "Позволяет использовать текст внутри тэга в качестве отображаемого наименования веб-страницы во вкладке"],
-  correctAnswer: 2
+  text: "Параметр тэга iframe и frame для определения отступа фрейма от верхнего и нижнего края страницы:",
+  answers: ["cols",
+      "rows",
+      "frameborder",
+      "border",
+      "name",
+      "noresize",
+      "scrolling",
+
+      "marginheight",
+      "marginwidth",
+
+      "bordercolor"],
+  correctAnswer: 7 
+},
+
+
+
+{
+  text: "Параметр тэга iframe и frame для определения отступа фрейма от левого и правого края страницы:",
+  answers: ["cols",
+      "rows",
+      "frameborder",
+      "border",
+      "name",
+      "noresize",
+      "scrolling",
+      "marginheight",
+      "marginwidth",
+
+      "bordercolor"],
+  correctAnswer: 8 
 }
+
 ];
 
 var yourAns = new Array;
@@ -179,9 +222,6 @@ for(var q=0; q<questions.length; ++q) {
 </script>
 </ol>
 <input type="button" onClick="Score()" value="Проверить результаты" />
-
-</form>
-
 
 
 

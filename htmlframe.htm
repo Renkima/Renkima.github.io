@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--  <script src="js/modernizr.js"></script> --> 
+
+  <title>HTML фрэймы</title>
+  <script src="menu.js"></script>
+
+
+<link rel="icon" type="image/vhd.microsoft.icon" href="i/Info.ico">
+
+<link rel="stylesheet" type="text/css" href="menug.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link rel="stylesheet" type="text/css" href="st.css">   
+
+<link rel="stylesheet" type="text/css" href="blove.css"> 
+</head>
+
+
+
+
+<body>
+
+
+
+</br></br>
+
+
+<header align="center">
+<ul class="menu cf">
+<li><a href="index.htm">Главная</a></li>
+
+  <li>
+    <a href="html.htm">HTML</a>
+      <ul class="submenu">
+        <li><a href="htmlcreate.htm">Структура сайта</a></li>
+        <li><a href="htmlosnova.htm">Тэги форматирования текста</a></li>
+        <li><a href="htmltable.htm">Таблицы</a></li>
+        <li><a href="htmlimg.htm">Изображения</a></li>
+        <li><a href="htmlframe.htm">Фрэймы</a></li>
+      </ul>
+  </li>
+
+    <li>
+    <a href="css.htm">CSS</a>
+      <ul class="submenu">
+        <li><a href="csscr.htm">Структура стилей</a></li>
+        <li><a href="cssft.htm">Форматирвоание текста</a></li>
+        <li><a href="cssftf.htm">Форматирвоание шрифта</a></li>
+        <li><a href="cssbackground.htm">Использование фонов</a></li>
+      </ul>
+  </li>
+</li>
+</ul>           
+</header>
+ </br></br>
+
+<div class="ttxt">
+<!-- <img src="i/spii.jpg"  height="auto" width="100%"> --> 
+</div>
+</br>
+
+
+
+<div class="bbpt">
+     <ul id="breadcrumb"> 
+        <li><a href="html.htm">HTML</a></li>
+        <li><a href="htmlframe.htm">Фрэймы</a></li>
+    </ul> 
+
+
+</br>
+
+<xmp></xmp>
+
+
+
+
+<p> Использование фрэймов на сайте может пригодиться очень, а тэги для изображения следующие: </p></br>
+
+<b>frameset</b> - тэг, содержащий в себе фрэймы и имеющий поределённые параметры.</br>
+<b>frame</b> - тэг для добавления фрэйма внутри тэга frameset. </br>
+
+<b>iframe</b> - тэг для добавления фрэйма внутри body. </br>
+
+
+  <p>Параметры frameset</p>
+<b>cols</b> - фрэймы находящиеся внутри были вериткально отображены. .</br>
+<b>rows</b> - фрэймы находящиеся внутри были горизонтально отображены. .</br>
+<b>frameborder</b> - включение и отключение обводки (0 или 1).</br>
+<b>border</b> - размер обводки.</br>
+<b>bordercolor</b> - цвет обводки.</br>
+
+
+  <p>Параметры frame и iframe</p>
+<b>name</b> — имя фрейма.</br>
+<b>noresize</b> — запрещает изменение размеров для определенного фрейма.</br>
+<b>scrolling</b> — управляет прокруткой внутри одной области (yes, no, auto).</br>
+<b>marginheight</b> — задает величину отступа фрейма от верхнего и нижнего краев страницы.</br>
+<b>marginwidth</b> — создает поля слева и справа.</br>
+<b>frameborder</b> — указывает, нужна или нет рамка вокруг фрейма (0 и 1).</br>
+<b>bordercolor</b> – цвет рамки.</br>
+<hr>
+
+
+<p>
+  Если вы захотите к примеру сделать, чтобы при открытии страницы отображались только 2 или более других для этого понадобиться всего-лишь сделать следующий код, который <b>находится между head И body:</p>
+<div class="ccd"><xmp></xmp>
+
+            <center> Код для вертикального отображения фрэймов:</center>
+  <xmp>
+<frameset cols="25%, 75%">
+  <frame src="index.htm">
+  <frame src="index.htm">
+</frameset>
+</xmp>
+<hr>
+            <center> Код для горизонтального отображения фрэймов:</center>
+  <xmp>
+<frameset rows="25%, 75%">
+  <frame src="index.htm">
+  <frame src="index.htm">
+</frameset>
+</xmp>
+<hr>
+<p> При этом первое и второе значение соответственно обозначает ширину (для cols) или высоту (для rows)</p>
+</div>
+
+
+<p>А если необходимо добавить фрэйм в качестве "окна" или же блока то необходимо сделать всего лишь следующее:
+Для начала необходимо знать, что при обычном добавлении фрэйма нужно разместить его внутри body</p>
+<div class="ccd"><xmp></xmp>
+
+</br>
+
+
+У создаваемого фрейма будет к примеру следующий код:
+
+<xmp>  <iframe src="index.htm" width="100%" height="720px" align="center"></iframe>  </xmp>
+
+
+Вот пример сайта с фреймом
+
+<iframe src="index.htm" width="100%" height="720px" align="center"></iframe>
+
+
+
+</br></br>
+
+
+      <xmp></xmp>
+
+
+</div>
+
+
+
+ <div id="na3"> <ul class="na3"> <li><a href="testframe.htm">ТЕСТ 1!</a></li> </ul> </div>
+  <div id="na3"> <ul class="na3"> <li><a href="testframe1.htm">ТЕСТ 2!</a></li> </ul> </div>
+ <div id="na3"> <ul class="na3"> <li><a href="testframe2.htm">ТЕСТ 3!</a></li> </ul> </div>
+
+
+</div>
+  
+
+</body>
+</html>

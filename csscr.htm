@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--  <script src="js/modernizr.js"></script> --> 
+
+  <title>CSS стили</title>
+  <script src="menu.js"></script>
+
+
+<link rel="icon" type="image/vhd.microsoft.icon" href="i/Info.ico">
+
+<link rel="stylesheet" type="text/css" href="menug.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link rel="stylesheet" type="text/css" href="st.css">   
+
+<link rel="stylesheet" type="text/css" href="blove.css"> 
+</head>
+<body>
+
+
+
+</br></br>
+
+
+<header align="center">
+<ul class="menu cf">
+<li><a href="index.htm">Главная</a></li>
+
+  <li>
+    <a href="html.htm">HTML</a>
+      <ul class="submenu">
+        <li><a href="htmlcreate.htm">Структура сайта</a></li>
+        <li><a href="htmlosnova.htm">Тэги форматирования текста</a></li>
+        <li><a href="htmltable.htm">Таблицы</a></li>
+        <li><a href="htmlimg.htm">Изображения</a></li>
+        <li><a href="htmlframe.htm">Фрэймы</a></li>
+      </ul>
+  </li>
+
+    <li>
+    <a href="css.htm">CSS</a>
+      <ul class="submenu">
+        <li><a href="csscr.htm">Структура стилей</a></li>
+        <li><a href="cssft.htm">Форматирвоание текста</a></li>
+        <li><a href="cssftf.htm">Форматирвоание шрифта</a></li>
+        <li><a href="cssbackground.htm">Использование фонов</a></li>
+      </ul>
+  </li>
+</li>
+</ul>           
+</header>
+ </br></br>
+
+<div class="ttxt">
+<!-- <img src="i/spii.jpg"  height="auto" width="100%"> --> 
+</div>
+</br>
+
+
+<div class="bbpt">
+
+<ul id="breadcrumb"> 
+        <li><a href="css.htm">CSS</a></li>
+        <li><a href="csscr.htm">Использование стилей</a></li>
+    </ul> 
+
+</br>
+<xmp></xmp>
+
+
+
+<p> Без стилевого форматирования сайта он так и будет всего-навсего однообразным набором текста, картинок, таблиц, фреймов и гиперссылок.</p>
+<p>Но несмотря на казалось бы большую сложность использования стилей на сайте всё довольно просто. Для начала рассмотрим структуру написания стилей:</p>
+
+
+
+
+<p> В начале пишется      тэг, либо класс, либо тэг+класс, либо класс+тэг. А также параметры разделяются при помощи ";"<br>
+По структуре можно описать следующим образом</p>
+<div class="ccd"><xmp></xmp>
+<xmp>
+  тэг{
+  параметр 1;
+  параметр 2;
+  параметр 3;
+}
+</xmp>
+К примеру:
+<xmp>
+  body{
+    background: black;   - фон будет чёрным
+    color: green;        - текст будет зелёным
+  }
+</xmp>
+</div>
+
+
+<p>А для добавления стиля к определённой части текста без добавления внешнего файла стиля (удобно, если нужно совсем немнрго изменить стиль страницы) нужно следующее: (</p>
+
+
+
+<div class="ccd"><xmp></xmp>
+<p>В первом варианте (по отношении к конкретному тэгу в конкретной части текста страницы)</p>
+К примеру использую тэг <b>p</b>
+
+<p style="color: green; background: black;">test<br>test</p>
+<xmp><p style="color: green; background: black;">test<br>test</p></xmp>
+
+</div>
+
+<p>Теперь стоит описать использоание классов. Классы обозначаются в тексте как <b>class="test"</b> а в стилевой части как <b>.test</b> </p>
+
+
+<div class="ccd"><xmp></xmp>
+<p>Во вотором варианте будет использоваться тип вложения, который заключается в том, что стилевая часть записывается отдельно от конкретного </p>
+К примеру использую тэг <b>p</b>
+
+<p style="color: white; background: blue;">test<br>test</p>
+
+
+<xmp>
+<style type="text/css">
+ p{ 
+  color: white;
+  background: blue;
+}
+</style></xmp>
+
+</div>
+ 
+
+
+
+
+
+
+А теперь рассмотрим способ использования внешнего файла стиля.
+<div class="ccd"><xmp></xmp>
+<p>Для начала необходимо создать сам стилевой файл, а для этого всего лишь необхоидмо создать файл с расширением <b><i>.css</i></b></p>
+<p>Теперь перейдём к связыванию стилевого файла и страницы web-сайта.</p>
+<p>После этого будет необходимо внутри тэга <big>HEAD</big> вписать следующий код:</p>
+
+<xmp> <link rel="stylesheet" type="text/css" href="st.css">  </xmp>
+<p>Внутри параметра <b>href</b> впишите имя файла стиля с соответственно его расширением</p>
+
+</div>
+
+
+
+<object>ГОТОВО! Теперь вы можете использовать стили на своём web-сайте для придания ему уникального, или же просто приятного интерфейса.</object>
+ <div id="na3"> <ul class="na3"> <li><a href="testcsscr.htm">ТЕСТ !</a></li> </ul> </div>
+
+
+      <xmp></xmp>
+      <xmp></xmp>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+  
+
+</body>
+</html>

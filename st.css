@@ -1,4 +1,11 @@
-﻿body{font-family: "Georgia";}
+﻿
+
+
+
+
+body{font-family: "Georgia";
+
+}
 
 p{text-indent:4%;}
 
@@ -81,7 +88,7 @@ color: #66e0d6;
 border-radius: 10px;    /*    скругление              */
 
     margin: 1%;        /*   отступ для границ      margin-top: 1%;         */
-    margin-bottom: 5%; 
+    margin-bottom: 3%; 
     margin-top: 3%; 
 
   padding: 2%;      /*    отступ для объектов внутри     */
@@ -128,7 +135,6 @@ font-family: "Segoe Script";
 
 .bbpt:hover{  /* *TXT* о с н о в а */
 opacity: 0.9; background: black; color: #66e0d6; 
-
 }
 
 
@@ -153,7 +159,6 @@ text-decoration: none;
 
 .bbpt:hover{  /* *TXT* о с н о в а */
 opacity: 0.9; background: black; color: #66e0d6; 
-
 }
 
 

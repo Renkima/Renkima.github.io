@@ -27,37 +27,26 @@
 
 <header align="center">
 <ul class="menu cf">
-  <li><a href="index.htm">на главную</a></li>
+<li><a href="index.htm">Главная</a></li>
 
   <li>
     <a href="html.htm">HTML</a>
       <ul class="submenu">
-        <li><a href="htmlcreate.htm">Создание сайта</a></li>
-        <li><a href="htmlosnova.htm">Основное</a></li>
+        <li><a href="htmlcreate.htm">Структура сайта</a></li>
+        <li><a href="htmlosnova.htm">Тэги форматирования текста</a></li>
         <li><a href="htmltable.htm">Таблицы</a></li>
         <li><a href="htmlimg.htm">Изображения</a></li>
-        <li><a href="htmlaudio.htm">Аудио</a></li>
+        <li><a href="htmlframe.htm">Фрэймы</a></li>
       </ul>
   </li>
 
     <li>
     <a href="css.htm">CSS</a>
       <ul class="submenu">
-        <li><a href="#">Создание стиля сайта и его привязка</a></li>
-        <li><a href="#">Фоны</a></li>
-        <li><a href="#">Разное</a></li>
-        
-      </ul>
-  </li>
-
-
-   <li>
-    <a href="js.htm">JS</a>
-      <ul class="submenu">
-        <li><a href="#">Создание сценарного файла сайта и его привязка</a></li>
-        <li><a href="#">Фоны</a></li>
-        <li><a href="#">Разное</a></li>
-        
+        <li><a href="csscr.htm">Структура стилей</a></li>
+        <li><a href="cssft.htm">Форматирвоание текста</a></li>
+        <li><a href="cssftf.htm">Форматирвоание шрифта</a></li>
+        <li><a href="cssbackground.htm">Использование фонов</a></li>
       </ul>
   </li>
 </li>
@@ -112,6 +101,7 @@
 
 </div>
 
+
 <p>Также есть следующие полезные тэги: <br>
 
 <b>br</b> - благодаря этому тэгу текст, находящиеся после тэга будет с новой строки. </br>
@@ -132,15 +122,97 @@
 <b><xmp><b>test</b></xmp></b>
 
 </div>
+
+
+<p>Помимо этих тэгов также можно добавлять гиперссылки на свой сайт: <br>
+
+<b>a</b> - тэг гиперссылки. </br>
+<b>href</b> - параметр с путём куда необходимо перейти.</br>
+<b>name</b> - параметр сименем для использования "якорей".</br>
+
+</p>
+
+<p>Вот пример использования ссылки:</p>
+
+<div class="ccd"><xmp></xmp>
+<p>Данные ссылки будут вести к файлу htmlosnova.htm. Можно  также сделать на внешнюю</p>
+
+
+Текстовая гиперссылка<br>
+<a href="htmlosnova.htm"> test </a>
+<br>Код: <br>
+<xmp> <a href="htmlosnova.htm">test</a>  </xmp>
+<hr>
+
+Картинка-гиперссылка<br>
+<a href="htmlosnova.htm"> <img src="i/dev.png" alt="Картинка-гиперссылка"> </a>
+<br>Код: <br>
+<xmp> <a href="htmlosnova.htm"> <img src="i/dev.png" alt="Картинка-гиперссылка"></a>  </xmp> 
+<hr>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<p>Таккже зачастую на сайта могут использоваться якорные гиперссылки: <br>
+
+<b>a</b> - тэг гиперссылки. </br>
+<b>href</b> - параметр с путём куда необходимо перейти.</br>
+
+
+</p>
+
+
+<p>Вот пример использования ссылки:</p>
+
+<div class="ccd"><xmp></xmp>
+
+
+Тэг в начале страницы или в желаемом месте<br>
+<a name="top"></a>
+<xmp><a name="top"></a></xmp> (в данном случае  тэг a будет невидим)
+<hr>
+
+
+Тэг в начале страницы или в желаемом месте </br>
+
+
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br>
+
+
+Сам "якорь" для перехода к части страницы
+<a href="#top">top</a>
+<xmp><a href="#top">top</a></xmp> 
+<hr>
+
+
+А для того, чтобы ссылаться на другую страницу сайта и сразу на якорную ссылку нужно следующее
+
+<a href="htmlosnova.htm#top">top</a>
+<xmp><a href="htmlosnova.htm#top">top</a></xmp> 
+<hr>
+
+</div>
+
+
+
+
  <div id="na3"> <ul class="na3"> <li><a href="testosnova.htm">ТЕСТ !</a></li> </ul> </div>
-
-
-
-
-
-
-
-
 
 
 

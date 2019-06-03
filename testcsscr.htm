@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
@@ -6,7 +6,7 @@
 
 <!--	<script src="js/modernizr.js"></script> -->	
 
-  <title>ТЕСТ</title>
+	<title>ТЕСТ</title>
   <script src="menu.js"></script>
 
 
@@ -67,57 +67,77 @@
 
 
 
+
 <div class="bbpt">
      <ul id="breadcrumb"> 
-        <li><a href="html.htm">HTML</a></li>
-        <li><a href="htmlcreate.htm">Создание сайта</a></li>
-        <li><a href="testhtmlcreate.htm">Тест</a></li>
+        <li><a href="css.htm">CSS</a></li>
+        <li><a href="csscr.htm">Использование стилей</a></li>
+        <li><a href="testcsscr.htm">Тест</a></li>
     </ul> 
 
 
 <xmp></xmp>
 
 
+
 <script type="text/javascript">
 // Заголовок страницы (h1)
-var title = 'Тестирование на наличие необходимых знаний длясоздания сайта на HTML';
+var title = 'Тестирование на наличие основных необходимых знаний для использования со стилями web-сайта';
 // Подзаголовок (h2)
 var subtitle = "Этот тест позволяет оценить Ваши знания";
 // Это ваши вопросы
 var questions=[
 
+
+
 {
-  text: "Расширение файла веб-страницы:",
-  answers: ["css",
-      "htm и html",
-      "js"],
+  text: "Какой синтаксис верный?",
+  answers: ["h1 style=calor: green; > test ",
+      "h1 style=''color: green;''> test ",
+      "h1 style=color: green;> test ",
+      "h1 style=color: green background: black> test "],
   correctAnswer: 1 // нумерация ответов с нуля!
 },
 
+
 {
-  text: "Тэг, в котором храниться тэг title:",
-  answers: ["h1",
-      "body",
-      "head"],
-  correctAnswer: 2
+  text: "Какой синтаксис верен",
+  answers: ["link rel='stylesheet' type='text/htm href='st.htm'",
+      "link rel='stylesheet type='text/js href='st.js'",
+      "link rel='stylesheet' type='text/css href='st.css'",
+      "link rel='stylesheet' type='text/html href=st.html'"],
+  correctAnswer: 2 
 },
 
 {
-  text: "Тэг, в котором храниться отображаемые на сайте элементы:",
+  text: "Расширение стилевого файла:",
+  answers: [".htm",
+      ".js",
+      ".py",
+      ".txt",
+      ".css"],
+  correctAnswer: 4 
+},
+
+
+{
+  text: "Где находится код для присоединения стилевого файла",
   answers: ["body",
-      "title",
       "head",
-      "между body и head"],
-  correctAnswer: 0
+      "Между body и head"],
+  correctAnswer: 1 
 },
 
 {
-  text: "Для чего нужен тэг title:",
-  answers: ["Позволяет отображать текст внутри веб-страницы",
-      "Позволяет использовать текст внутри тэга в качестве неотображаемого текста на веб-страницы",
-      "Позволяет использовать текст внутри тэга в качестве отображаемого наименования веб-страницы во вкладке"],
-  correctAnswer: 2
+  text: "Каким символом отделяются параметры?",
+  answers: [",",
+      ".",
+      ":",
+      ";",
+      "Пробелом"],
+  correctAnswer: 3 
 }
+
 ];
 
 var yourAns = new Array;
@@ -131,7 +151,7 @@ function Score(){
   var num = i+1;
   answerText=answerText+"\n Вопрос №"+ num +"";
   if(yourAns[i]!=questions[i].correctAnswer){
-      answerText=answerText+"\n ❌ Правильный ответ: " +
+      answerText=answerText+"\n X Правильный ответ: " +
     questions[i].answers[questions[i].correctAnswer] + "\n";
     }
         else{
@@ -179,9 +199,6 @@ for(var q=0; q<questions.length; ++q) {
 </script>
 </ol>
 <input type="button" onClick="Score()" value="Проверить результаты" />
-
-</form>
-
 
 
 

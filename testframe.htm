@@ -67,57 +67,97 @@
 
 
 
+
 <div class="bbpt">
      <ul id="breadcrumb"> 
         <li><a href="html.htm">HTML</a></li>
-        <li><a href="htmlcreate.htm">Создание сайта</a></li>
-        <li><a href="testhtmlcreate.htm">Тест</a></li>
+        <li><a href="htmlframe.htm">Фрэймы</a></li>
+        <li><a href="testframe.htm">Тест</a></li>
     </ul> 
 
 
 <xmp></xmp>
 
 
+
 <script type="text/javascript">
 // Заголовок страницы (h1)
-var title = 'Тестирование на наличие необходимых знаний длясоздания сайта на HTML';
+var title = 'Тестирование на наличие необходимых знаний для работы с фрэймами на HTML';
 // Подзаголовок (h2)
 var subtitle = "Этот тест позволяет оценить Ваши знания";
 // Это ваши вопросы
 var questions=[
 
 {
-  text: "Расширение файла веб-страницы:",
-  answers: ["css",
-      "htm и html",
-      "js"],
+  text: "Тэг для добавления фрэймов на сайт (содержащий в себе несколько фреймов):",
+  answers: ["iframe",
+      "frameset",
+      "frame"],
   correctAnswer: 1 // нумерация ответов с нуля!
 },
 
 {
-  text: "Тэг, в котором храниться тэг title:",
-  answers: ["h1",
-      "body",
-      "head"],
-  correctAnswer: 2
+  text: "Тэги находящиеся внутри тэга frameset:",
+  answers: ["iframe",
+      "frameset",
+      "frame"],
+  correctAnswer: 2 
+},
+
+
+
+
+{
+  text: "Параметр тэга frameset для отображения фрэймов вертиклаьно:",
+  answers: ["cols",
+      "rows",
+      "frameborder",
+      "border",
+      "bordercolor"],
+  correctAnswer: 0 
 },
 
 {
-  text: "Тэг, в котором храниться отображаемые на сайте элементы:",
-  answers: ["body",
-      "title",
-      "head",
-      "между body и head"],
-  correctAnswer: 0
+  text: "Параметр тэга frameset для отображения фрэймов горизонтально:",
+  answers: ["cols",
+      "rows",
+      "frameborder",
+      "border",
+      "bordercolor"],
+  correctAnswer: 1 
+},
+
+
+{
+  text: "Параметр тэга frameset для определения размера обводки:",
+  answers: ["cols",
+      "rows",
+      "frameborder",
+      "border",
+      "bordercolor"],
+  correctAnswer: 3 
 },
 
 {
-  text: "Для чего нужен тэг title:",
-  answers: ["Позволяет отображать текст внутри веб-страницы",
-      "Позволяет использовать текст внутри тэга в качестве неотображаемого текста на веб-страницы",
-      "Позволяет использовать текст внутри тэга в качестве отображаемого наименования веб-страницы во вкладке"],
-  correctAnswer: 2
+  text: "Параметр тэга frameset для включения и отключения обводки:",
+  answers: ["cols",
+      "rows",
+      "frameborder",
+      "border",
+      "bordercolor"],
+  correctAnswer: 2 
+},
+
+{
+  text: "Параметр тэгов фрэйма для выбора цвета обводки:",
+  answers: ["cols",
+      "rows",
+      "frameborder",
+      "border",
+      "bordercolor"],
+  correctAnswer: 4 
 }
+
 ];
 
 var yourAns = new Array;
@@ -179,9 +219,6 @@ for(var q=0; q<questions.length; ++q) {
 </script>
 </ol>
 <input type="button" onClick="Score()" value="Проверить результаты" />
-
-</form>
-
 
 
 
