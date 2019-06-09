@@ -53,7 +53,7 @@ ________________________________________________________________________________
 /* ____________________________)_____________________________________ */
 
 .ggblock{  /* БЛОК Г Л А В Н Ы Й */
-          float: left;
+          float: center;
           position: relative;
      display: inline-block;
 
@@ -63,6 +63,8 @@ text-shadow: 1px 2px 4px  blue;
 box-shadow: 5px 5px 10px  #30d5c8;
 
    width: 25%;
+   min-width: 400px;
+
                     height: auto; 
 
 opacity: 0.7;
@@ -75,6 +77,9 @@ border-radius: 10px;    /*    скругление              */
     margin: 1%;        /*   отступ для границ      margin-top: 1%;         */
     margin-bottom: 3%; 
     margin-top: 3%; 
+
+margin-left: 10%;
+
   padding: 2%;      /*    отступ для объектов внутри     */
 text-decoration: none;
 }
@@ -85,6 +90,8 @@ text-decoration: none;
 opacity: 0.9;
 box-shadow: 2px 5px 3px  #30d5c8;
 text-shadow: 2px 1px 3px  blue;
+
+min-width: 500px;
 }
 
 
