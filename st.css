@@ -64,24 +64,9 @@ box-shadow: 5px 5px 10px  #30d5c8;
 
    width: 25%;
                     height: auto; 
-/*        box-shadow: 2px 5px 3px  #30d5c8;
-  
-box-sizing: 50%;
-                    width: 25%;
-                    height: 25%; 
-
-
-
-
-*/
-
-
-
 
 opacity: 0.7;
   font-size: 14px;
-
-
 background: black; 
 color: #66e0d6;  
     border-size: 1%;
@@ -90,7 +75,6 @@ border-radius: 10px;    /*    скругление              */
     margin: 1%;        /*   отступ для границ      margin-top: 1%;         */
     margin-bottom: 3%; 
     margin-top: 3%; 
-
   padding: 2%;      /*    отступ для объектов внутри     */
 text-decoration: none;
 }
@@ -98,24 +82,16 @@ text-decoration: none;
 
 
 .ggblock:hover{
-
 opacity: 0.9;
-
 box-shadow: 2px 5px 3px  #30d5c8;
-
 text-shadow: 2px 1px 3px  blue;
-
-
 }
 
 
 
 .ggblock h1{
-
 box-shadow: 1px 6px 8px  green;
-
 text-shadow: 2px 5px 3px  green;
-
 font-family: "Segoe Script";
 }
 
@@ -140,7 +116,7 @@ opacity: 0.9; background: black; color: #66e0d6;
 
 /* ___________________________txt )_____________________________________ */
 .bbpt{  /* *TXT* о с н о в а */
- float: left;
+ float: center;
 
 opacity: 0.8;
   font-size: 16px;
@@ -172,28 +148,6 @@ opacity: 0.9; background: black; color: #66e0d6;
 
 
 /* ___________________________mennnn )_____________________________________ */
-.rmen1{  /* *TXT* о с н о в а */
- float: right;
-position: absolute;
-opacity: 0.8;
-  font-size: 16px;
-background: black; 
-color: #66e0d6;  
-    border-size: 1%;
-border-radius: 10px;    /*    скругление              */
-
-    margin-top: 15%;        /*   отступ для границ              */
-    margin-left:  71%;     
-    margin-right: 1%;     
-
-  padding: 1%;      /*    отступ для объектов внутри     */
-text-decoration: none;
-}
-
-.rmen1:hover{  /* *TXT* о с н о в а */
-opacity: 0.9; background: black; color: #66e0d6; 
-
-}
 
 
 
@@ -238,7 +192,7 @@ background: black;
   margin: 2%; /*       отступ между пунктами           */
        list-style: none;    /* убирает маркеры элементов списка   */
        position: relative;
-
+text-align: center;
 }
 
 

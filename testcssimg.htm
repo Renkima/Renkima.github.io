@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
@@ -6,7 +6,7 @@
 
 <!--	<script src="js/modernizr.js"></script> -->	
 
-  <title>ТЕСТ</title>
+	<title>ТЕСТ</title>
   <script src="menu.js"></script>
 
 
@@ -23,6 +23,7 @@
 
 
 </br></br>
+
 
 <header align="center">
 <ul class="menu cf">
@@ -46,72 +47,104 @@
         <li><a href="cssft.htm">Форматирвоание текста</a></li>
         <li><a href="cssftf.htm">Форматирвоание шрифта</a></li>
         <li><a href="cssbackground.htm">Использование фонов</a></li>
+     
       </ul>
   </li>
-
-
 </li>
 </ul>           
-</header>
- </br></br>
-
-
+</header> </br></br>
 
 <div class="bbpt">
      <ul id="breadcrumb"> 
-        <li><a href="html.htm">HTML</a></li>
-        <li><a href="htmltable.htm">Таблицы</a></li>
-        <li><a href="testtable.htm">Тест</a></li>
+        <li><a href="css.htm">CSS</a></li>
+        <li><a href="cssbackground.htm">Использование фонов</a></li>
+        <li><a href="testcssimg.htm">Тест</a></li>
     </ul> 
-
-
-<xmp></xmp>
-
 
 <script type="text/javascript">
 // Заголовок страницы (h1)
-var title = 'Тестирование на наличие необходимых знаний для работы с таблицами на HTML';
+var title = 'Тестирование на наличие основных необходимых знаний для использования фонов при помощи CSS для web-сайта';
 // Подзаголовок (h2)
 var subtitle = "Этот тест позволяет оценить Ваши знания";
 // Это ваши вопросы
 var questions=[
 
+
+
 {
-  text: "Тэг таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
-  correctAnswer: 1 // нумерация ответов с нуля!
+  text: "параметр  для выбора изображения фона",
+  answers: ["background-color",
+      "background-image",
+      "background-repeat",
+      "background-position",
+      "background-attachment"],
+  correctAnswer: 1 
 },
+
+
 {
-  text: "Тэг строки таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
-  correctAnswer: 2
-},
-{
-  text: "Тэг ячейки таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
+  text: "параметр  для выбора цвета фона",
+  answers: ["background-color",
+      "background-image",
+      "background-repeat",
+      "background-position",
+      "background-attachment"],
   correctAnswer: 0 
 },
-{
-  text: "Параметр расширения ячейки таблицы по вертикали (объединения с соседними):",
-  answers: ["rowspan",
-      "colspan",
-      "width",
-      "height"],
-  correctAnswer: 1
+
+  {
+  text: "параметр  для выбора позиционирования фона",
+  answers: ["background-color",
+      "background-image",
+      "background-repeat",
+      "background-position",
+      "background-attachment"],
+  correctAnswer: 3 
 },
+
+  {
+  text: "параметр  для выбора типа прокрутки фона",
+  answers: ["background-color",
+      "background-image",
+      "background-repeat",
+      "background-position",
+      "background-attachment"],
+  correctAnswer: 4 
+
+},
+
+  {
+  text: "параметр  для повторения фона",
+  answers: ["background-color",
+      "background-image",
+      "background-repeat",
+      "background-position",
+      "background-attachment"],
+  correctAnswer: 2 
+},
+
+  {
+  text: "значение background-repeat для повторения фона только по вертикали",
+  answers: ["repeat-x",
+      "no-repeat",
+      "repeat-y"],
+  correctAnswer: 2
+},
+
 {
-  text: "Параметр расширения ячейки таблицы по вертикали (объединения с соседними):",
-  answers: ["height",
-      "colspan",
-      "width",
-      "rowspan"],
-  correctAnswer: 3
+  text: "значение background-repeat для повторения фона только по горизонтали",
+  answers: ["repeat-x",
+      "no-repeat",
+      "repeat-y"],
+  correctAnswer: 0 
+},
+
+{
+  text: "значение background-repeat для повторения фона только по вертикали",
+  answers: ["repeat-x",
+      "no-repeat",
+      "repeat-y"],
+  correctAnswer: 1 
 }];
 
 var yourAns = new Array;
@@ -125,10 +158,17 @@ function Score(){
   var num = i+1;
   answerText=answerText+"\n Вопрос №"+ num +"";
   if(yourAns[i]!=questions[i].correctAnswer){
-      answerText=answerText+"\n ❌ Правильный ответ: " +
+      answerText=answerText+"\n X Правильный ответ: " +
     questions[i].answers[questions[i].correctAnswer] + "\n";
-    }  else{answerText=answerText+": Верно! ✓\n"; ++score;}
-       } answerText=answerText+"\n ✓ Всего правильных ответов: "+score+"\n";
+    }
+        else{
+      answerText=answerText+": Верно! ✓\n";
+      ++score;
+      }
+       }
+
+   answerText=answerText+"\n ✓ Всего правильных ответов: "+score+"\n";
+
    alert(answerText);
    yourAns = [];
    score = 0;
@@ -166,8 +206,6 @@ for(var q=0; q<questions.length; ++q) {
 </script>
 </ol>
 <input type="button" onClick="Score()" value="Проверить результаты" />
-
-</form>
 
 
 

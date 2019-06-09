@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
@@ -6,7 +6,7 @@
 
 <!--	<script src="js/modernizr.js"></script> -->	
 
-  <title>ТЕСТ</title>
+	<title>ТЕСТ</title>
   <script src="menu.js"></script>
 
 
@@ -23,6 +23,7 @@
 
 
 </br></br>
+
 
 <header align="center">
 <ul class="menu cf">
@@ -46,73 +47,148 @@
         <li><a href="cssft.htm">Форматирвоание текста</a></li>
         <li><a href="cssftf.htm">Форматирвоание шрифта</a></li>
         <li><a href="cssbackground.htm">Использование фонов</a></li>
+     
       </ul>
   </li>
-
-
 </li>
 </ul>           
 </header>
  </br></br>
 
+<div class="ttxt">
+<!-- <img src="i/spii.jpg"  height="auto" width="100%"> --> 
+</div>
+</br>
+
+
+
+
+
+
+
 
 
 <div class="bbpt">
      <ul id="breadcrumb"> 
-        <li><a href="html.htm">HTML</a></li>
-        <li><a href="htmltable.htm">Таблицы</a></li>
-        <li><a href="testtable.htm">Тест</a></li>
+        <li><a href="css.htm">CSS</a></li>
+        <li><a href="cssft.htm">Форматирование текста</a></li>
+        <li><a href="testcssft.htm">Тест</a></li>
     </ul> 
 
 
 <xmp></xmp>
 
 
+
 <script type="text/javascript">
 // Заголовок страницы (h1)
-var title = 'Тестирование на наличие необходимых знаний для работы с таблицами на HTML';
+var title = 'Тестирование на наличие основных необходимых знаний для использования форматирования текста при помощи CSS web-сайта';
 // Подзаголовок (h2)
 var subtitle = "Этот тест позволяет оценить Ваши знания";
 // Это ваши вопросы
 var questions=[
 
+
+
 {
-  text: "Тэг таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
-  correctAnswer: 1 // нумерация ответов с нуля!
+  text: "параметр  красной строки",
+  answers: ["word-spacing",
+      "letter-spacing",
+      "text-indent",
+      "color",
+      "text-transform",
+      "text-decoration",
+      "text-align",
+      "text-indent"],
+  correctAnswer: 7 
 },
+
+
 {
-  text: "Тэг строки таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
-  correctAnswer: 2
+  text: "параметр преобразования текста",
+  answers: ["word-spacing",
+      "letter-spacing",
+      "text-indent",
+      "color",
+      "text-transform",
+      "text-decoration",
+      "text-align",
+      "text-indent"],
+  correctAnswer: 4 
 },
+
+
 {
-  text: "Тэг ячейки таблицы:",
-  answers: ["th",
-      "table",
-      "tr"],
+  text: "параметр расстояния между словами",
+  answers: ["word-spacing",
+      "letter-spacing",
+      "text-indent",
+      "color",
+      "text-transform",
+      "text-decoration",
+      "text-align",
+      "text-indent"],
   correctAnswer: 0 
 },
+
+
 {
-  text: "Параметр расширения ячейки таблицы по вертикали (объединения с соседними):",
-  answers: ["rowspan",
-      "colspan",
-      "width",
-      "height"],
-  correctAnswer: 1
+  text: "параметр оформления текста",
+  answers: ["word-spacing",
+      "letter-spacing",
+      "text-indent",
+      "color",
+      "text-transform",
+      "text-decoration",
+      "text-align",
+      "text-indent"],
+  correctAnswer: 5 
 },
+
+
+
 {
-  text: "Параметр расширения ячейки таблицы по вертикали (объединения с соседними):",
-  answers: ["height",
-      "colspan",
-      "width",
-      "rowspan"],
-  correctAnswer: 3
-}];
+  text: "параметр межсимвольного расстояния",
+  answers: ["word-spacing",
+      "letter-spacing",
+      "text-indent",
+      "color",
+      "text-transform",
+      "text-decoration",
+      "text-align",
+      "text-indent"],
+  correctAnswer: 1 
+},
+
+{
+  text: "параметр цвета текста",
+  answers: ["word-spacing",
+      "letter-spacing",
+      "text-indent",
+      "color",
+      "text-transform",
+      "text-decoration",
+      "text-align",
+      "text-indent"],
+  correctAnswer: 3 
+},
+
+
+
+{
+  text: "параметр положения текста",
+  answers: ["word-spacing",
+      "letter-spacing",
+      "text-indent",
+      "color",
+      "text-transform",
+      "text-decoration",
+      "text-align",
+      "text-indent"],
+  correctAnswer: 6 
+}
+
+];
 
 var yourAns = new Array;
 var score = 0;
@@ -125,10 +201,17 @@ function Score(){
   var num = i+1;
   answerText=answerText+"\n Вопрос №"+ num +"";
   if(yourAns[i]!=questions[i].correctAnswer){
-      answerText=answerText+"\n ❌ Правильный ответ: " +
+      answerText=answerText+"\n X Правильный ответ: " +
     questions[i].answers[questions[i].correctAnswer] + "\n";
-    }  else{answerText=answerText+": Верно! ✓\n"; ++score;}
-       } answerText=answerText+"\n ✓ Всего правильных ответов: "+score+"\n";
+    }
+        else{
+      answerText=answerText+": Верно! ✓\n";
+      ++score;
+      }
+       }
+
+   answerText=answerText+"\n ✓ Всего правильных ответов: "+score+"\n";
+
    alert(answerText);
    yourAns = [];
    score = 0;
@@ -166,8 +249,6 @@ for(var q=0; q<questions.length; ++q) {
 </script>
 </ol>
 <input type="button" onClick="Score()" value="Проверить результаты" />
-
-</form>
 
 
 

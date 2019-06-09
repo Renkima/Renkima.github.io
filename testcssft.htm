@@ -55,90 +55,91 @@
 </header>
  </br></br>
 
-<div class="ttxt">
-<!-- <img src="i/spii.jpg"  height="auto" width="100%"> --> 
-</div>
-</br>
-
-
-
-
-
-
-
-
-
 <div class="bbpt">
      <ul id="breadcrumb"> 
         <li><a href="css.htm">CSS</a></li>
-        <li><a href="csscr.htm">Использование стилей</a></li>
-        <li><a href="testcsscr.htm">Тест</a></li>
+        <li><a href="cssftf.htm">Форматирование шрифтов</a></li>
+        <li><a href="testcssftf.htm">Тест</a></li>
     </ul> 
-
-
-<xmp></xmp>
-
-
 
 <script type="text/javascript">
 // Заголовок страницы (h1)
-var title = 'Тестирование на наличие основных необходимых знаний для использования со стилями web-сайта';
+var title = 'Тестирование на наличие основных необходимых знаний для использования форматирования шрифтов при помощи CSS web-сайта';
 // Подзаголовок (h2)
 var subtitle = "Этот тест позволяет оценить Ваши знания";
 // Это ваши вопросы
 var questions=[
 
 
-
 {
-  text: "Какой синтаксис верный?",
-  answers: ["h1 style=calor: green; > test ",
-      "h1 style=''color: green;''> test ",
-      "h1 style=color: green;> test ",
-      "h1 style=color: green background: black> test "],
-  correctAnswer: 1 // нумерация ответов с нуля!
-},
-
-
-{
-  text: "Какой синтаксис верен",
-  answers: ["link rel='stylesheet' type='text/htm href='st.htm'",
-      "link rel='stylesheet type='text/js href='st.js'",
-      "link rel='stylesheet' type='text/css href='st.css'",
-      "link rel='stylesheet' type='text/html href=st.html'"],
+  text: "параметр  размера шрифта",
+  answers: ["font-family",
+      "font-style",
+      "font-size",
+      "font-weight"],
   correctAnswer: 2 
 },
 
 {
-  text: "Расширение стилевого файла:",
-  answers: [".htm",
-      ".js",
-      ".py",
-      ".txt",
-      ".css"],
-  correctAnswer: 4 
+  text: "параметр  семейства шрифта",
+  answers: ["font-family",
+      "font-style",
+      "font-size",
+      "font-weight"],
+  correctAnswer: 0 
+},
+
+{
+  text: "параметр  стиля шрифта",
+  answers: ["font-family",
+      "font-style",
+      "font-size",
+      "font-weight"],
+  correctAnswer: 1 
 },
 
 
 {
-  text: "Где находится код для присоединения стилевого файла",
-  answers: ["body",
-      "head",
-      "Между body и head"],
+  text: "параметр  ширины линий шрифта",
+  answers: ["font-family",
+      "font-style",
+      "font-size",
+      "font-weight"],
+  correctAnswer: 3 
+},
+
+
+{
+  text: "Лишнее значение у font-family",
+  answers: ["serif",
+      "sans-serif",
+      "sans",
+      "monospace",
+      "impact",
+      "Georgia"],
+  correctAnswer: 2 
+},
+
+
+
+{
+  text: "Лишнее значение у font-style",
+  answers: ["normal",
+      "cursive",
+      "italic",
+      "oblique"],
   correctAnswer: 1 
 },
 
 {
-  text: "Каким символом отделяются параметры?",
-  answers: [",",
-      ".",
-      ":",
-      ";",
-      "Пробелом"],
+  text: "Лишнее значение у font-weight ",
+  answers: ["normal",
+      "bold",
+      "bolder",
+      "light",
+      "lighter"],
   correctAnswer: 3 
-}
-
-];
+}];
 
 var yourAns = new Array;
 var score = 0;

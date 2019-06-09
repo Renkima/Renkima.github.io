@@ -71,7 +71,7 @@
 <div class="bbpt">
      <ul id="breadcrumb"> 
         <li><a href="html.htm">HTML</a></li>
-        <li><a href="htmlosnova.htm">Основное</a></li>
+        <li><a href="htmlosnova.htm">Тэги форматирвоания текста</a></li>
         <li><a href="testosnova.htm">Тест</a></li>
     </ul> 
 
@@ -87,7 +87,6 @@ var title = 'Тестирование на наличие необходимых
 var subtitle = "Этот тест позволяет оценить Ваши знания";
 // Это ваши вопросы
 var questions=[
-
 {
   text: "Тэг для уменьшения текста:",
   answers: ["h1",
@@ -98,15 +97,8 @@ var questions=[
       "h1",
       "big",
       "i"],
-  correctAnswer: 3 // нумерация ответов с нуля!
+  correctAnswer: 3 
 },
-
-
-
-
-
-
-
 {
   text: "Тэг для использования гиперссылки:",
   answers: ["h1",
@@ -120,7 +112,6 @@ var questions=[
       "i"],
   correctAnswer: 5 
 },
-
 {
   text: "Параметр ссылающиеся на определённый адрес для использования гиперссылки:",
   answers: ["h1",
@@ -135,7 +126,6 @@ var questions=[
       "i"],
   correctAnswer: 8 
 },
-
 {
   text: "Параметр имени для использования якорной гиперссылки:",
   answers: ["h1",
@@ -150,22 +140,6 @@ var questions=[
       "i"],
   correctAnswer: 2 
 },
-
-
-{
-  text: "Тэг для оглавления текста:",
-  answers: ["h1",
-      "br",
-      "b",
-      "small",
-      "hr",
-      "h1",
-      "big",
-      "i"],
-  correctAnswer: 5 
-},
-
-
 {
   text: "Тэг для увеличения текста:",
   answers: ["h1",
@@ -178,18 +152,6 @@ var questions=[
       "i"],
   correctAnswer: 6 
 },
-
-{
-  text: "Оглавление текста (минимальные и максимальное значение):",
-  answers: ["h1..h2",
-      "h1..h3",
-      "h1..h4",
-      "h1..h5",
-      "h1..h6",
-      "h1..h7"],
-  correctAnswer: 4 
-},
-
 {
   text: "Тэг для курсивного текста:",
   answers: ["h1",
@@ -202,7 +164,6 @@ var questions=[
       "i"],
   correctAnswer: 7 
 },
-
 {
   text: "Тэг для жирного текста:",
   answers: ["h1",
@@ -215,7 +176,6 @@ var questions=[
       "i"],
   correctAnswer: 2 
 },
-
 {
   text: "Тэг для подчёркивания строки:",
   answers: ["h1",
@@ -227,9 +187,7 @@ var questions=[
       "big",
       "i"],
   correctAnswer: 4 
-}
-
-];
+}];
 
 var yourAns = new Array;
 var score = 0;
@@ -250,9 +208,7 @@ function Score(){
       ++score;
       }
        }
-
    answerText=answerText+"\n ✓ Всего правильных ответов: "+score+"\n";
-
    alert(answerText);
    yourAns = [];
    score = 0;
