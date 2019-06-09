@@ -59,7 +59,6 @@ ________________________________________________________________________________
 
 text-shadow: 1px 2px 4px  blue;
 
-
 box-shadow: 5px 5px 10px  #30d5c8;
 
    width: 25%;
@@ -219,8 +218,6 @@ text-align: center;
       -moz-transition: all 0.5s 0.05s ease; /*плавный переход*/
       -o-transition: all 0.5s 0.05s ease;
       -webkit-transition: all 0.5s 0.05s ease;
-
-
 }
 
 
